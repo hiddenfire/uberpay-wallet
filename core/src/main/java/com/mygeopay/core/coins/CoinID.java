@@ -17,7 +17,7 @@ import java.util.Set;
  * @author Adonis Valamontes
  */
 public enum CoinID {
-    ASIACOIN_MAIN(AsiacoinMain.get()),
+  /*  ASIACOIN_MAIN(AsiacoinMain.get()),
     BITCOIN_MAIN(BitcoinMain.get()),
     BITCOIN_TEST(BitcoinTest.get()),
     BOLICOIN_MAIN(BolicoinMain.get()),
@@ -38,9 +38,9 @@ public enum CoinID {
     NUBITS_MAIN(NuBitsMain.get()),
     NAMECOIN_MAIN(NamecoinMain.get()),
     BLACKCOIN_MAIN(BlackcoinMain.get()),
-    CLAMCOIN_MAIN(ClamcoinMain.get()),
-    MAZACOIN_MAIN(MazacoinMain.get()),
-    STARTCOIN_MAIN(StartcoinMain.get()),
+    CLAMCOIN_MAIN(ClamcoinMain.get()), */ // stripping all but MAZA
+    MAZACOIN_MAIN(MazacoinMain.get()) //,
+  /*  STARTCOIN_MAIN(StartcoinMain.get()),
     MONACOIN_MAIN(MonacoinMain.get()),
     FEATHERCOIN_MAIN(FeathercoinMain.get()),
     CANADAECOIN_MAIN(CanadaeCoinMain.get()),
@@ -61,7 +61,7 @@ public enum CoinID {
     VIACOIN_MAIN(ViacoinMain.get()),
     OKCASHCOIN_MAIN(OkCashMain.get()),
     FAIRCOIN_MAIN(FairCoinMain.get()),
-    PAKCOIN_MAIN(PakcoinMain.get()),
+    PAKCOIN_MAIN(PakcoinMain.get()), */ // stripping all but MAZA
     ;
 
     private static List<CoinType> types;
