@@ -2,7 +2,7 @@ package com.mygeopay.wallet;
 
 import android.text.format.DateUtils;
 
-import com.mygeopay.core.coins.BitcoinMain;
+/* import com.mygeopay.core.coins.BitcoinMain;
 import com.mygeopay.core.coins.BitcoinTest;
 import com.mygeopay.core.coins.BlackcoinMain;
 import com.mygeopay.core.coins.BatacoinMain;
@@ -26,9 +26,9 @@ import com.mygeopay.core.coins.GcrCoinMain;
 import com.mygeopay.core.coins.GroestlCoinMain;
 import com.mygeopay.core.coins.LitecoinMain;
 import com.mygeopay.core.coins.LitecoinTest;
-import com.mygeopay.core.coins.PakcoinMain;
+import com.mygeopay.core.coins.PakcoinMain; */ // stripping all but MAZA
 import com.mygeopay.core.coins.MazacoinMain;
-import com.mygeopay.core.coins.NovacoinMain;
+/* import com.mygeopay.core.coins.NovacoinMain;
 import com.mygeopay.core.coins.ParkbyteMain;
 import com.mygeopay.core.coins.ShadowCashMain;
 import com.mygeopay.core.coins.StartcoinMain;
@@ -47,7 +47,7 @@ import com.mygeopay.core.coins.VcoinMain;
 import com.mygeopay.core.coins.VertcoinMain;
 import com.mygeopay.core.coins.ViacoinMain;
 import com.mygeopay.core.coins.VpncoinMain;
-import com.mygeopay.core.coins.OkCashMain;
+import com.mygeopay.core.coins.OkCashMain; */ // stripping all but MAZA
 import com.mygeopay.core.network.CoinAddress;
 import com.mygeopay.stratumj.ServerAddress;
 import com.google.common.collect.ImmutableList;
@@ -121,7 +121,7 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-            new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.coinomi.net", 5001),
+        /*    new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.coinomi.net", 5001),
                                                     new ServerAddress("btc-cce-2.coinomi.net", 5001)),
             new CoinAddress(BitcoinTest.get(),      new ServerAddress("btc-testnet-cce-1.coinomi.net", 15001),
                                                     new ServerAddress("btc-testnet-cce-2.coinomi.net", 15001)),
@@ -132,11 +132,11 @@ public class Constants {
             new CoinAddress(LitecoinMain.get(),     new ServerAddress("ltc-cce-1.coinomi.net", 5002),
                                                     new ServerAddress("ltc-cce-2.coinomi.net", 5002)),
             new CoinAddress(LitecoinTest.get(),     new ServerAddress("ltc-testnet-cce-1.coinomi.net", 15002),
-                                                    new ServerAddress("ltc-testnet-cce-2.coinomi.net", 15002)),
+                                                    new ServerAddress("ltc-testnet-cce-2.coinomi.net", 15002)), */
             // Pakcoin Server (alpha)
-            new CoinAddress(PakcoinMain.get(),      new ServerAddress("electrum.pakcoin.org", 50001)),
+        /*    new CoinAddress(PakcoinMain.get(),      new ServerAddress("electrum.pakcoin.org", 50001)), */
             //
-            new CoinAddress(PeercoinMain.get(),     new ServerAddress("ppc-cce-1.coinomi.net", 5004),
+        /*    new CoinAddress(PeercoinMain.get(),     new ServerAddress("ppc-cce-1.coinomi.net", 5004),
                                                     new ServerAddress("ppc-cce-2.coinomi.net", 5004)),
             new CoinAddress(NuSharesMain.get(),     new ServerAddress("nsr-cce-1.coinomi.net", 5011),
                                                     new ServerAddress("nsr-cce-2.coinomi.net", 5011)),
@@ -163,10 +163,10 @@ public class Constants {
             new CoinAddress(MonacoinMain.get(),     new ServerAddress("mona-cce-1.coinomi.net", 5022),
                                                     new ServerAddress("mona-cce-2.coinomi.net", 5022)),
             new CoinAddress(DigibyteMain.get(),     new ServerAddress("dgb-cce-1.coinomi.net", 5023),
-                                                    new ServerAddress("dgb-cce-2.coinomi.net", 5023)),
+                                                    new ServerAddress("dgb-cce-2.coinomi.net", 5023)), */ // stripping all but MAZA
             new CoinAddress(MazacoinMain.get(),     new ServerAddress("tate.cryptoadhd.com", 50001),
-                                                    new ServerAddress("tate.maza.club", 50001)),
-            new CoinAddress(CryptoescudoMain.get(), new ServerAddress("electrum1.cryptoescudo.pt", 50001),
+                                                    new ServerAddress("tate.maza.club", 50001)) //,
+         /*   new CoinAddress(CryptoescudoMain.get(), new ServerAddress("electrum1.cryptoescudo.pt", 50001),
                                                     new ServerAddress("electrum2.cryptoescudo.pt", 50001),
                                                     new ServerAddress("electrum3.cryptoescudo.pt", 50001)),
             // TODO alpha stage Electrum URL for CRYPTOESCUDO
@@ -226,14 +226,14 @@ public class Constants {
             // FairCoin
              new CoinAddress(FairCoinMain.get(),     new ServerAddress("fairlectrum.fair-coin.org", 9251))
             // SSL
-            // new CoinAddress(FairCoinMain.get(),     new ServerAddress("electrum.fair.to", 51002))
+            // new CoinAddress(FairCoinMain.get(),     new ServerAddress("electrum.fair.to", 51002)) */  // stripping all but MAZA
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
     public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS;
     static {
         COINS_ICONS = new HashMap<>();
-        COINS_ICONS.put(CoinID.BITCOIN_MAIN.getCoinType(), R.drawable.bitcoin);
+     /*   COINS_ICONS.put(CoinID.BITCOIN_MAIN.getCoinType(), R.drawable.bitcoin);
         COINS_ICONS.put(CoinID.BITCOIN_TEST.getCoinType(), R.drawable.bitcoin_test);
         COINS_ICONS.put(CoinID.DOGECOIN_MAIN.getCoinType(), R.drawable.dogecoin);
         COINS_ICONS.put(CoinID.DOGECOIN_TEST.getCoinType(), R.drawable.dogecoin_test);
@@ -258,10 +258,10 @@ public class Constants {
         COINS_ICONS.put(CoinID.CLAMCOIN_MAIN.getCoinType(), R.drawable.clam);
         COINS_ICONS.put(CoinID.PARKBYTE_MAIN.getCoinType(), R.drawable.parkbyte);
         COINS_ICONS.put(CoinID.CRYPTOESCUDO_MAIN.getCoinType(), R.drawable.cryptoescudo);
-        COINS_ICONS.put(CoinID.OKCASHCOIN_MAIN.getCoinType(), R.drawable.okcash);
+        COINS_ICONS.put(CoinID.OKCASHCOIN_MAIN.getCoinType(), R.drawable.okcash); */ // stripping all but MAZA
 //        COINS_ICONS.put(CoinID.URO_MAIN.getCoinType(), R.drawable.uro);
         COINS_ICONS.put(CoinID.MAZACOIN_MAIN.getCoinType(), R.drawable.mazacoin);
-        COINS_ICONS.put(CoinID.STARTCOIN_MAIN.getCoinType(), R.drawable.startcoin);
+     /*   COINS_ICONS.put(CoinID.STARTCOIN_MAIN.getCoinType(), R.drawable.startcoin);
         COINS_ICONS.put(CoinID.DIGITALCOIN_MAIN.getCoinType(), R.drawable.digitalcoin);
         COINS_ICONS.put(CoinID.CANNACOIN_MAIN.getCoinType(), R.drawable.cannacoin);
         COINS_ICONS.put(CoinID.DIGIBYTE_MAIN.getCoinType(), R.drawable.digibyte);
@@ -276,10 +276,10 @@ public class Constants {
         COINS_ICONS.put(CoinID.VIACOIN_MAIN.getCoinType(), R.drawable.viacoin);
         COINS_ICONS.put(CoinID.BOLICOIN_MAIN.getCoinType(), R.drawable.bolivar);
         COINS_ICONS.put(CoinID.STEPSCOIN_MAIN.getCoinType(), R.drawable.steps);
-        COINS_ICONS.put(CoinID.FAIRCOIN_MAIN.getCoinType(), R.drawable.faircoin);
+        COINS_ICONS.put(CoinID.FAIRCOIN_MAIN.getCoinType(), R.drawable.faircoin); */ // stripping all but MAZA
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
-        COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
+    /*    COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_TEST.getCoinType(), "https://chain.so/tx/BTCTEST/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_MAIN.getCoinType(), "https://chain.so/tx/DOGE/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_TEST.getCoinType(), "https://chain.so/tx/DOGETEST/%s");
@@ -297,10 +297,10 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.RUBYCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/rby/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NAMECOIN_MAIN.getCoinType(), "https://explorer.namecoin.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.FEATHERCOIN_MAIN.getCoinType(), "http://explorer.feathercoin.com/tx/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.SHADOWCASH_MAIN.getCoinType(),  "http://shadowchain.info/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.SHADOWCASH_MAIN.getCoinType(),  "http://shadowchain.info/tx/%s"); */ // stripping all but MAZA
 //      COINS_BLOCK_EXPLORERS.put(CoinID.URO_MAIN.getCoinType(), "https://chainz.cryptoid.info/uro/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.MAZACOIN_MAIN.getCoinType(), "https://mazacha.in/tx/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.STARTCOIN_MAIN.getCoinType(), "http://explorer.startcoin.org/tx/%s");
+     /*   COINS_BLOCK_EXPLORERS.put(CoinID.STARTCOIN_MAIN.getCoinType(), "http://explorer.startcoin.org/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.CANADAECOIN_MAIN.getCoinType(), "http://explorer.canadaecoin.ca/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DIGITALCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/dgc/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.PARKBYTE_MAIN.getCoinType(), "https://chainz.cryptoid.info/pkb/tx.dws?%s");
@@ -321,31 +321,31 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.FAIRCOIN_MAIN.getCoinType(), "https://chain.fair-coin.org/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BOLICOIN_MAIN.getCoinType(),  "https://chainz.cryptoid.info/boli/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.EUROPECOIN_MAIN.getCoinType(), "http://http://erc.explorer.bitnodes.net/tx/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.GROESTLCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/grs/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.GROESTLCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/grs/tx.dws?%s"); */ // stripping all but MAZA
     }
 
-    public static final CoinType DEFAULT_COIN = BitcoinMain.get();
-    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) BitcoinMain.get());
+	public static final CoinType DEFAULT_COIN = MazacoinMain.get();
+    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) MazacoinMain.get());
     public static final ArrayList<String> DEFAULT_TEST_COIN_IDS = Lists.newArrayList(
-            BitcoinTest.get().getId(),
-            LitecoinTest.get().getId(),
-            DogecoinTest.get().getId()
+            BitcoinTest.get().getId() //,
+          //  LitecoinTest.get().getId(),
+          //  DogecoinTest.get().getId()
     );
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
-            BitcoinMain.get(),
+         /*   BitcoinMain.get(),
             DogecoinMain.get(),
             LitecoinMain.get(),
             DogecoinDarkMain.get(),
-            BatacoinMain.get(),
-/*            EuropecoinMain.get(), */
+            BatacoinMain.get(), 
+//            EuropecoinMain.get(), 
             FairCoinMain.get(),
-            ViacoinMain.get(),
+            ViacoinMain.get(), */ // stripping all but MAZA
             MazacoinMain.get(),
-            BolicoinMain.get(),
+         /*   BolicoinMain.get(),
             CanadaeCoinMain.get(),
             OkCashMain.get(),
-/*            StartcoinMain.get(), */
+//            StartcoinMain.get(), 
             PakcoinMain.get(),
             PeercoinMain.get(),
             DashMain.get(),
@@ -353,7 +353,7 @@ public class Constants {
             BlackcoinMain.get(),
             ClamcoinMain.get(),
             MonacoinMain.get(),
-/*            GroestlCoinMain.get(), */
+//           GroestlCoinMain.get(), 
             NovacoinMain.get(),
             NuSharesMain.get(),
             VpncoinMain.get(),
@@ -369,12 +369,12 @@ public class Constants {
             ShadowCashMain.get(),
             StepscoinMain.get(),
             NuBitsMain.get(),
-/*            VcoinMain.get(), */
+//           VcoinMain.get(), 
             ParkbyteMain.get(),
             GcrCoinMain.get(),
-            CryptoescudoMain.get(),
-            BitcoinTest.get(),
-            LitecoinTest.get(),
-            DogecoinTest.get()
+            CryptoescudoMain.get(), */ // stripping all but MAZA
+            BitcoinTest.get() //,
+          /*  LitecoinTest.get(),
+            DogecoinTest.get() */ // stripping all but MAZA
     );
 }

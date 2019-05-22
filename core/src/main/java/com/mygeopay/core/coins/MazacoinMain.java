@@ -17,15 +17,15 @@ public class MazacoinMain extends CoinType {
         dumpedPrivateKeyHeader = 224;
 
         family = BitFamily.get();
-        name = "MZC (β)";
+        name = "MAZA (β)";
         fullname = "Mazacoin";
-        symbol = "MZC";
+        symbol = "MAZA";
         uriScheme = "mazacoin";
         bip44Index = 13;
         unitExponent = 8;
         feePerKb = value(100000);
         minNonDust = value(1000); // 0.00001 MAZACOIN mininput
-        softDustLimit = value(100000); // 0.001 MZC
+        softDustLimit = value(100000); // 0.001 MAZA
         softDustPolicy = SoftDustPolicy.BASE_FEE_FOR_EACH_SOFT_DUST_TXO;
     }
 
