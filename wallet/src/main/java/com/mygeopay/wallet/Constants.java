@@ -2,17 +2,17 @@ package com.mygeopay.wallet;
 
 import android.text.format.DateUtils;
 
-/* import com.mygeopay.core.coins.BitcoinMain;
+/* import com.mygeopay.core.coins.BitcoinMain; */
 import com.mygeopay.core.coins.BitcoinTest;
-import com.mygeopay.core.coins.BlackcoinMain;
+/* import com.mygeopay.core.coins.BlackcoinMain;
 import com.mygeopay.core.coins.BatacoinMain;
 import com.mygeopay.core.coins.BolicoinMain;
 import com.mygeopay.core.coins.CanadaeCoinMain;
 import com.mygeopay.core.coins.CannacoinMain;
-import com.mygeopay.core.coins.ClamcoinMain;
+import com.mygeopay.core.coins.ClamcoinMain; */
 import com.mygeopay.core.coins.CoinID;
 import com.mygeopay.core.coins.CoinType;
-import com.mygeopay.core.coins.CryptoescudoMain;
+/* import com.mygeopay.core.coins.CryptoescudoMain;
 import com.mygeopay.core.coins.DashMain;
 import com.mygeopay.core.coins.DigibyteMain;
 import com.mygeopay.core.coins.DigitalcoinMain;
