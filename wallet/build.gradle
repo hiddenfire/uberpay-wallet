@@ -7,8 +7,12 @@ android {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE'
     }
+	compileOptions{
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
+	//sourceCompatibility = JavaVersion.VERSION_1_6
+    //targetCompatibility = JavaVersion.VERSION_1_6
+	}
     defaultConfig {
         applicationId 'com.mygeopay.wallet'
         minSdkVersion 11
@@ -16,6 +20,11 @@ android {
         versionCode 70
         versionName 'v1.7.02.20'
     }
+	
+	 dexOptions {
+        javaMaxHeapSize "4g" // 2g should be also OK
+    }
+	
     buildTypes {
         release {
             minifyEnabled false
